@@ -1,0 +1,94 @@
+@font-face {
+    font-family:'Cocogoose';
+    src: url(cocogoose/Cocogoose\ Pro\ Semilight-trial.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Coolvetica';
+    src: url(coolvetica/coolvetica\ condensed\ rg.otf) format('opentype');
+}
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url(creato_display/CreatoDisplay-Regular.otf) format('opentype');
+}
+
+html{
+    background-image:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(background.jpg);  
+}
+
+.header{
+    background-color: rgb(76, 47, 16);
+}
+
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:rgb(223, 210, 200);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+    
+
+body{
+    margin:0;;
+    font-family: 'CreatoDisplay', sans-serif;
+}
+
+article{
+    text-align: center;
+    padding:10px;
+    color:#fff;
+    margin:10px;
+    font-size: large;
+    width: 650px;
+    opacity: 0.9;
+}
+
+section{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    border-bottom:2px solid #b7b7b7;
+}
+
+b{
+    color:chartreuse;
+}
+.logo{
+width: 20%;
+float: right;
+}
